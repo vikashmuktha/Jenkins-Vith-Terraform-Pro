@@ -1,8 +1,9 @@
+# Backend Block
+
 terraform {
   backend "s3" {
-    bucket         = "vikash-bucket-terraform"
-    key            = "my-terraform-environment/main"
-    region         = "eu-west-3"
-    dynamodb_table = "mr-cloud-book"
+    bucket = "xxxx-bucket-terraform"
+    key    = "jenkins/terraform.tfstate"
+    region = "us-east-1"
   }
 }
